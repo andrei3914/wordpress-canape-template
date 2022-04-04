@@ -1,9 +1,11 @@
 .navigation {
     background-color: #262626;
     color: white;
-    padding-inline: 20px;
+    padding: 0 20px;
 
     display: flex;
+
+    font-family: 'Playfair Display', serif;
 
     .navigation-title {
         font-size: 2rem;
@@ -26,6 +28,14 @@
     .link {
             color: white;
             text-decoration: none;
+
+            .dropDownSpan {
+                line-height: 12px;
+            }
+    }
+
+    .link:hover, .link:active {
+        color: #c39738;
     }
 
     .toggle-nav {
@@ -141,8 +151,10 @@
 /* DESKTOP only*/
 @media (min-width: 800px) {
     .navigation {
+        padding-right: 30px;
+
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
         .navigationLeft {

@@ -31,7 +31,7 @@ const Navigation = () => {
             <li><Link to='/menu' className='link'>Menu</Link></li>
             <li><Link to='/news' className='link'>News</Link></li>
             <li className='hoverLi'><Link to='/readability' className='link dropDownLink'>
-                Readability<span><RiArrowDropDownLine className='dropDownIcon'/></span>
+                Readability<span className='dropDownSpan'><RiArrowDropDownLine className='dropDownIcon'/></span>
                 </Link>
                 <ul className='hover-navigation'>
                   <li>Image Alignment</li>

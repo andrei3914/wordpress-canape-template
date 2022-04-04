@@ -14,6 +14,7 @@ function App() {
             srcSet="https://canapedemo.files.wordpress.com/2015/11/food-918743_1920.jpg?w=1180&h=530&crop=1 1180w, https://canapedemo.files.wordpress.com/2015/11/food-918743_1920.jpg?w=150&h=67&crop=1 150w, https://canapedemo.files.wordpress.com/2015/11/food-918743_1920.jpg?w=300&h=135&crop=1 300w, https://canapedemo.files.wordpress.com/2015/11/food-918743_1920.jpg?w=768&h=345&crop=1 768w, https://canapedemo.files.wordpress.com/2015/11/food-918743_1920.jpg?w=1024&h=460&crop=1 1024w" alt="dish" />
         </div>
 
+        {/* WELCOME SECTION*/}
         <div className="home-welcome-div">
           <div className="welcome-header">
             <p className='welcome-title'>WELCOME TO CANAPÉ</p> 
@@ -53,6 +54,28 @@ function App() {
               </div>
             </Link>
           </div>
+        </div> {/* END WELCOME DIV */}
+
+        <div className="thankYou">
+          <h2>Thank you's</h2>
+          <ul>
+            <li id='post-1'>
+              <div className="entry-content">
+                <p>My business and Canapé are like salt and pepper, peanut butter and jelly, Batman and Robin, The Fonz and cool, rainbows and pots of gold, Santa and cookies, Pete and Pete – they’re just perfect together.</p>
+              </div>
+              <header className="entry-author">
+                <p><em>- Takashi</em></p>
+              </header>
+            </li>
+            <li id='post-2'>
+              <div className="entry-content">
+                <p>Canapé made my business what it is today — outstanding, wildly successful, ahead of its time. My products are flying off the shelves, and I truly believe I have Canapé to thank for that.</p>
+              </div>
+              <header className="entry-author">
+                <p><em>- Caroline</em></p>
+              </header>
+            </li>
+          </ul>
         </div>
 
       </div>
