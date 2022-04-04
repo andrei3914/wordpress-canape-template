@@ -14,14 +14,27 @@
     .primary-navigation {
         display: flex;
         gap: 2rem;
-    
-        li:first-child {
-            list-style-type: none;
+        list-style-type: none;
+        
+        li {
+            display: flex;
         }
-
         .dropDownLink {
             display: flex;
             align-items: center;
+        }
+        
+        li:first-child::before, .hoverLi::before {
+            list-style-type: none;
+            content: none;
+        }
+
+        li::before, .dropDownLink::before {
+            content: "\2022";
+            display: inline-block;
+            width: 1em;
+            margin-left: 0;
+            color: #404040;
         }
     }
 
@@ -76,6 +89,15 @@
 
         .primary-navigation[data-visible="true"] {
             display: block;
+            
+            li::before, .dropDownLink::before {
+                content: none;
+            }
+
+            .hoverLi {
+                display: flex;
+                flex-direction: column;
+            }
 
             li {
                 list-style-type: none;
@@ -96,6 +118,11 @@
                 display: block;
                 margin-top: 10px;
                 margin-bottom: -10px;
+
+                li::before {
+                    content: none;
+                    list-style: none;
+                }
             }
         }
     }
@@ -119,9 +146,14 @@
         .hover-navigation {
             position: absolute;
             z-index: -1000;
-            transform: translateY(50%);
+            transform: translateY(70%);
 
             transition: transform 500ms ease-out;
+
+            li::before {
+                content: none;
+                list-style: none;
+            }
         }
 
         .hoverLi:hover, .hover-navigation:hover {
@@ -134,9 +166,9 @@
                 border: 1px solid white;
                 list-style-type: none;
                 padding: 10px;
-                margin-left: -30px;
+                margin-left: -20px;
 
-                transform: translateY(0%);
+                transform: translateY(28%);
             }
 
             .hover-navigation > li:first-child {

@@ -54,8 +54,9 @@ function App() {
               </div>
             </Link>
           </div>
-        </div> {/* END WELCOME DIV */}
+        </div> 
 
+        {/* THANK YOU section */}
         <div className="thankYou">
           <h2>Thank you's</h2>
           <ul>
@@ -76,6 +77,32 @@ function App() {
               </header>
             </li>
           </ul>
+        </div>
+
+        {/* CONTACT, SERVICES AND FOLLOW US SECTION*/}
+        <div className="endpage-container">
+          <div className="contact">
+            <h3>CONTACT</h3>
+            <p>Please get in touch with us for more information or to schedule catering for your next event.</p>
+            <p><a href="mailto:#">contact@example.com</a></p>
+          </div>
+          <div className="services">
+            <h3>SERVICES</h3>
+            <ul>
+              <li>Catering</li>
+              <li>Private Chef Services</li>
+              <li>Menu Development</li>
+            </ul>
+          </div>
+          <div className="follow-us">
+            <h3>FOLLOW US VIA EMAIL</h3>
+            <form action="">
+              <p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+              <p>Join 1,118 other followers</p>
+              <input type="text" placeholder="Enter your email adress"/>
+              <input type="submit" value="FOLLOW"/>
+            </form>
+          </div>
         </div>
 
       </div>
