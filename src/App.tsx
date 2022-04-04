@@ -7,7 +7,9 @@ function App() {
   return (
     <div>
       <Navigation />
-      home
+      <div className='home-container'>
+        home
+      </div>
       <Footer />
     </div> 
   );

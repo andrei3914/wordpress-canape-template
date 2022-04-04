@@ -1,12 +1,15 @@
 import React from 'react'
+import './Footer.scss';
 
 const Footer = () => {
   return (
-    <footer>
-        <h2>CANAPÉ</h2>
-        <p>A canapé is a type of hors d'oeuvre, a small, prepared and
-            usually decorative food, held in the fingers and often eaten in 
-            one bite</p>
+    <footer className='footer'>
+        <div className='footer-content'>
+          <p className='footer-title'>CANAPÉ</p>
+          <p className='footer-body'><em>A canapé is a type of hors d'oeuvre, a small, prepared and
+              usually decorative food, held in the fingers and often eaten in
+              one bite.</em></p>
+        </div>
     </footer>
   )
 }
