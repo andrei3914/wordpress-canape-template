@@ -5,6 +5,10 @@
 
     display: flex;
 
+    .navigation-title {
+        font-size: 2rem;
+    }
+
     .primary-navigation {
         display: flex;
         gap: 2rem;
@@ -40,6 +44,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            
+            margin-bottom: -15px;
 
             .toggle-nav {
                 background-color: transparent;
@@ -90,12 +96,16 @@
     .navigation {
         flex-direction: column;
         justify-content: flex-start;
-        padding-bottom: 10px;
-    
-        h1 {
-            padding-left: 1.5em;
-        }
+        padding: 10px;
 
+        .navigationLeft {
+            margin-bottom: -2rem;
+
+            .navigation-title {
+                padding-left: 1.2em;
+            }
+        }
+        
         .hover-navigation {
             position: absolute;
             z-index: -1000;
@@ -134,5 +144,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        .navigationLeft {
+            margin: 0;
+        }
     }
 }

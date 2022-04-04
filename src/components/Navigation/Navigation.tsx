@@ -10,7 +10,7 @@ const Navigation = () => {
   return (
     <nav className='navigation'>
         <div className='navigationLeft'>
-          <h1><Link to='/' className='link'>CANAPÉ</Link></h1>
+          <p className='navigation-title'><Link to='/' className='link'>CANAPÉ</Link></p>
           <button className='toggle-nav'
               aria-controls='primary-navigation'
               onClick={() => {
