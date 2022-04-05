@@ -94,9 +94,9 @@ function App() {
           <div className="services">
             <h3 className='card-title'>SERVICES</h3>
             <ul className='services-list'>
-              <li><a href="/">Catering</a></li>
-              <li><a href="/">Private Chef Services</a></li>
-              <li><a href="/">Menu Development</a></li>
+              <li><Link to='/catering'>Catering</Link></li>
+              <li><Link to="/private-chef-services">Private Chef Services</Link></li>
+              <li><Link to="/menu-development">Menu Development</Link></li>
             </ul>
           </div>
           <div className="follow-us">

@@ -1,0 +1,47 @@
+.catering-container {
+    padding-bottom: 24rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .hero {
+        background-image: url('https://canapedemo.files.wordpress.com/2015/12/eating-601578_1920.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .catering-content {
+        position: relative;
+        padding: 0 50px;
+        
+        background: white;
+
+        .entry-title {
+            font-family: 'Playfair Display', sans-serif;
+            font-weight: 400;
+        }
+    }
+}
+
+/* MOBILE */
+@media (min-width: 250px) and (max-width: 480px){
+    .catering-content {
+        margin-top: 20px;
+    }
+}
+
+/* TABLET */
+@media (min-width: 480px) and (max-width: 800px){
+    .catering-content {
+        margin-top: -100px;
+    }
+}
+
+@media (min-width: 800px) {
+    .catering-content {
+        margin-top: -100px;
+        width: 70%;
+    }
+}

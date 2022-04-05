@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('../../assets/droid-serif/DroidSerif-Regular.ttf');
+}
+
+.readability-container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 3.5rem 5% 16rem;
+
+    font-family: 'Noticia Text',Arial,sans-serif;
+    color: #404040;
+    
+    .entry-title {
+        font-family: 'Playfair Display',sans-serif;
+        font-weight: 400;
+    }
+
+    blockquote {
+        font-family: 'Playfair Display', 'Droid Serif', Georgia, serif;
+
+        margin: 0 0 2.3334em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+        border-left: 4px solid #e9b330;
+
+        font-style: italic;
+        line-height: 1.75;
+
+        color: black;
+        p {
+            margin-left: 1em;
+        }
+    }
+
+    blockquote p {
+        margin-bottom: 1.1667em;
+    }
+
+}
+
+@media (min-width: 250px) {
+    blockquote {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 480px) {
+    blockquote {
+        font-size: 1.4rem;
+    }
+}
