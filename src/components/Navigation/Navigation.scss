@@ -47,7 +47,10 @@
             }
     }
 
-    .link:hover, .link:active {
+    .link:hover {
+        color: #c39738;
+    }
+    .selected {
         color: #c39738;
     }
 

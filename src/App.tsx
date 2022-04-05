@@ -60,6 +60,7 @@ function App() {
         <div className="thankYou">
           <h2>Thank you's</h2>
           <ul>
+    
             <li id='post-1'>
               <div className="entry-content">
                 <p>My business and Canapé are like salt and pepper, peanut butter and jelly, Batman and Robin, The Fonz and cool, rainbows and pots of gold, Santa and cookies, Pete and Pete – they’re just perfect together.</p>
@@ -68,6 +69,7 @@ function App() {
                 <p><em>- Takashi</em></p>
               </header>
             </li>
+          
             <li id='post-2'>
               <div className="entry-content">
                 <p>Canapé made my business what it is today — outstanding, wildly successful, ahead of its time. My products are flying off the shelves, and I truly believe I have Canapé to thank for that.</p>
@@ -76,31 +78,34 @@ function App() {
                 <p><em>- Caroline</em></p>
               </header>
             </li>
+              
           </ul>
         </div>
 
         {/* CONTACT, SERVICES AND FOLLOW US SECTION*/}
         <div className="endpage-container">
           <div className="contact">
-            <h3>CONTACT</h3>
-            <p>Please get in touch with us for more information or to schedule catering for your next event.</p>
-            <p><a href="mailto:#">contact@example.com</a></p>
+            <h3 className='card-title'>CONTACT</h3>
+            <div>
+              <p>Please get in touch with us for more information or to schedule catering for your next event.</p>
+              <p><a href="mailto:#">contact@example.com</a></p>
+            </div>
           </div>
           <div className="services">
-            <h3>SERVICES</h3>
-            <ul>
-              <li>Catering</li>
-              <li>Private Chef Services</li>
-              <li>Menu Development</li>
+            <h3 className='card-title'>SERVICES</h3>
+            <ul className='services-list'>
+              <li><a href="/">Catering</a></li>
+              <li><a href="/">Private Chef Services</a></li>
+              <li><a href="/">Menu Development</a></li>
             </ul>
           </div>
           <div className="follow-us">
-            <h3>FOLLOW US VIA EMAIL</h3>
-            <form action="">
+            <h3 className='card-title'>FOLLOW US VIA EMAIL</h3>
+            <form action="" className='follow-us-form'>
               <p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
               <p>Join 1,118 other followers</p>
               <input type="text" placeholder="Enter your email adress"/>
-              <input type="submit" value="FOLLOW"/>
+              <input type="submit" value='FOLLOW'/>
             </form>
           </div>
         </div>

@@ -109,6 +109,7 @@ html, body {
       }
     }
 
+    /* CONTACT, SERVICES AND FOLLOW US */
     .endpage-container {
       display: flex;
       gap: 20px;
@@ -119,7 +120,77 @@ html, body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        border: 2px solid #ece8e0;
+        
+        text-align: center;
+        color: #404040;
+
+        .card-title {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+        }
+
+        a {
+          font-weight: 700;
+
+          color: #c39738;
+          text-decoration: none;
+          border-bottom: 1px solid transparent;
+
+          &:hover {
+            color: #404040;
+            border-bottom: 1px solid #404040;
+          }
+        }
+
+        .services-list {
+          width: 100%;
+          margin-left: -3.5rem;
+
+          list-style-type: none;
+
+          li {
+            padding: 10px;
+            width: 100%;
+            border-top: 1px solid #ece8e0;
+
+            a {
+              font-weight: 500;
+            }
+          }
+        }
+
+        .follow-us-form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          input[type='text'] {
+            width: 70%;
+          }
+
+          input[type='submit'] {
+            margin-top: 20px;
+            padding: calc(0.667em + 2px) calc(1.333em + 2px);
+            border-radius: 9999px;
+            border: 2px solid #444;
+
+            background-color: #32373c;
+            
+            font-size: 1.125em;
+            color: white;
+
+            cursor: pointer;
+
+            &:hover {
+              background-color: white;
+            }
+          }
+        }
       }
+
+     
     }  
 }
 
@@ -152,6 +223,13 @@ html, body {
 
   .endpage-container {
     flex-direction: column;
+    align-items: center;
+    width: 90vw;
+
+    .contact, .services, .follow-us {
+      width: 70vw;
+      padding: 2em;
+    }
   }
 }
 
@@ -180,6 +258,18 @@ html, body {
       }
     }
   }
+
+  .endpage-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    
+
+    .contact, .services, .follow-us {
+      width: 75%;
+      padding: 2em;
+    }
+  }
 }
 
 /* DESKTOP only */
@@ -194,7 +284,7 @@ html, body {
       gap: 20px;
 
       .card-content {
-        height: 85%;
+        height: 90%;
 
         .card-body {
           display: block;
@@ -206,6 +296,15 @@ html, body {
           z-index: 1000;
         }
       }
+    }
+  }
+
+  .endpage-container {
+   
+    .contact, .services, .follow-us {
+      width: 32%;
+      margin-right: 2%;
+      padding: 2em;
     }
   }
 }

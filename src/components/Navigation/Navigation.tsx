@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Navigation.scss';
 import Icon from '../../assets/icon-hamburger.svg';
 import { RiArrowDropDownLine } from 'react-icons/ri';
@@ -27,18 +27,47 @@ const Navigation = () => {
 
         <ul className='primary-navigation' id='primary-navigation'
             data-visible={visibility}>
-            <li><Link to='/' className='link'>Home</Link></li>
-            <li><Link to='/menu' className='link'>Menu</Link></li>
-            <li><Link to='/news' className='link'>News</Link></li>
-            <li className='hoverLi'><Link to='/readability' className='link dropDownLink'>
-                Readability<span className='dropDownSpan'><RiArrowDropDownLine className='dropDownIcon'/></span>
-                </Link>
+            <li>
+                <NavLink to='/' 
+                 className={({ isActive }) => 
+                 'link' + (isActive ? " selected" : "")}> 
+                    Home
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to='/menu'
+                    className={({ isActive }) => 
+                    'link' + (isActive ? " selected" : "")}>
+                      Menu
+                </NavLink>
+            </li>
+            <li>
+              <NavLink to='/news'
+                className={({ isActive }) => 
+                'link' + (isActive ? " selected" : "")} 
+                 >
+                News
+              </NavLink>
+            </li>
+            <li className='hoverLi'>
+                <NavLink to='/readability'
+                    className={({ isActive }) => 
+                      'link dropDownLink' + (isActive ? " selected" : "")}>
+                  Readability<span className='dropDownSpan'><RiArrowDropDownLine className='dropDownIcon'/></span>
+                </NavLink>
                 <ul className='hover-navigation'>
                   <li>Image Alignment</li>
                   <li>HTML Elements</li>
                 </ul>
             </li>
-            <li><Link to='/reservations' className='link'>Reservations</Link></li>
+            <li>
+              <NavLink to='/reservations'
+              className={({ isActive }) => 
+              'link' + (isActive ? " selected" : "")} 
+               >
+                Reservations
+              </NavLink>
+            </li>
         </ul>
     </nav>
   )
