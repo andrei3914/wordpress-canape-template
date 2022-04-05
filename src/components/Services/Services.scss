@@ -1,18 +1,18 @@
-.catering-container {
+.catering-container, .privateChef-container {
     padding-bottom: 24rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .hero {
+    .hero-catering {
         background-image: url('https://canapedemo.files.wordpress.com/2015/12/eating-601578_1920.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
 
-    .catering-content {
+    .catering-content, .private-content {
         position: relative;
         padding: 0 50px;
         
@@ -23,24 +23,36 @@
             font-weight: 400;
         }
     }
+
+    /* private chef section */
+    .hero-private {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('https://canapedemo.files.wordpress.com/2015/12/cutlery-865096_1280.jpg');
+    }
+
+    .private-content {
+        padding-bottom: 50px;
+    }
 }
 
 /* MOBILE */
 @media (min-width: 250px) and (max-width: 480px){
-    .catering-content {
+    .catering-content, .private-content {
         margin-top: 20px;
     }
 }
 
 /* TABLET */
 @media (min-width: 480px) and (max-width: 800px){
-    .catering-content {
+    .catering-content, .private-content {
         margin-top: -100px;
     }
 }
 
 @media (min-width: 800px) {
-    .catering-content {
+    .catering-content, .private-content {
         margin-top: -100px;
         width: 70%;
     }
