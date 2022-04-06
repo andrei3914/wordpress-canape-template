@@ -14,7 +14,8 @@ const News = () => {
           {
             news_entries.map(entry => {
               return (
-                <NewsItem 
+                <NewsItem
+                  key={entry.id} 
                   id={entry.id}
                   title={entry.title}
                   content={entry.content}

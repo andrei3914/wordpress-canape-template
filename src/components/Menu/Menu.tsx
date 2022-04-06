@@ -25,7 +25,8 @@ const Menu = () => {
             {
               menu_entries.map(entry => {
                 return(
-                  <MenuItem 
+                  <MenuItem
+                    key={entry.id} 
                     id={entry.id}
                     title={entry.title}
                     content={entry.content}

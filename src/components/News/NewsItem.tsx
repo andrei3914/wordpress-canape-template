@@ -22,8 +22,8 @@ const NewsItem: React.FC<Props> = ({ id, title, content, image, image_set, video
             <div className='news-item-body flex'>
             { comments ? 
                 <div className='left-content'>
-                    <span>Featured</span>
-                    <span>{comments} Comment</span>
+                    <span className='featured-post'>Featured</span><br />
+                    <span className='comments'>{comments} Comment</span>
                 </div> 
                 :
                 <span className='left-content'>{written}</span>

@@ -49,6 +49,10 @@
                     &:last-child {
                         border-bottom: 0;
                     }
+
+                    &:nth-last-child(2) {
+                        border-bottom: 0;
+                    }
                 }
             }
         }

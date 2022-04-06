@@ -138,6 +138,11 @@
         justify-content: flex-start;
         padding: 10px;
 
+
+        .primary-navigation {
+            gap: 1rem;
+        }
+
         .navigationLeft {
             margin-bottom: -2rem;
 
@@ -191,6 +196,10 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
+        .primary-navigation {
+            gap: 2rem;
+        }
 
         .navigationLeft {
             margin: 0;
