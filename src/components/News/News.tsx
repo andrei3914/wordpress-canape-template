@@ -2,6 +2,8 @@ import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import Footer from '../Footer/Footer'
 import './News.scss';
+import news_entries from './news_entries.json';
+import NewsItem from './NewsItem';
 
 const News = () => {
   return (
@@ -9,8 +11,24 @@ const News = () => {
       <Navigation />
       <div className="news-container">
         <div className="news">
-          News section
+          {
+            news_entries.map(entry => {
+              return (
+                <NewsItem 
+                  id={entry.id}
+                  title={entry.title}
+                  content={entry.content}
+                  image={entry.image}
+                  image_set={entry.image_set}
+                  video={entry.video}
+                  comments={entry.comments}
+                  written={entry.written}
+                />
+              );
+            })
+          }
         </div>
+        
         <div className="info">
           <div className="hours">
             <h3 className='card-title'>{`HOURS & INFO`}</h3>

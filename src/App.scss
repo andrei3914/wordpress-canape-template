@@ -13,6 +13,11 @@ html, body {
   font-family: 'Noticia Text', Arial, sans-serif;
 }
 
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
 .home-container {
   padding-bottom: 15rem;
   display: flex;
@@ -81,10 +86,10 @@ html, body {
   }
   /* THANK YOU'S SECTION*/
     .thankYou {
+      min-width: 100vw;
       background-color: #f9f5ed;
       border-bottom: 1px solid #ece8e0;
 
-      width: 100%;
       margin-top: -84px;
       padding-top: 84px;
 
@@ -99,12 +104,29 @@ html, body {
         color: #b4966b;
       }
 
-      ul {
+      .slides {
         list-style-type: none;
         text-align: center;
+        width: 70%;
+        margin-left: -2rem;
 
       .entry-author {
           font-family: 'Playfair Display', Georgia, serif;
+        }
+      }
+
+      .slider-nav {
+        list-style-type: none;
+        margin-left: -1rem;
+
+        button {
+          border-radius: 50%;
+          border: 1px solid transparent;
+          padding: 0.3rem;
+
+          background-color: #c39738;
+
+          cursor:pointer;
         }
       }
     }

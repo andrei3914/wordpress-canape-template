@@ -2,6 +2,8 @@ import React from 'react'
 import Footer from '../Footer/Footer'
 import Navigation from '../Navigation/Navigation'
 import './Menu.scss';
+import MenuItem from './MenuItem';
+import menu_entries from './menu_entries.json';
 
 const Menu = () => {
   return (
@@ -20,6 +22,18 @@ const Menu = () => {
               <p>The menu is a mix of French regional cuisines, and the menu changes with the seasons. Be sure to ask about the daily specials!</p>
             </header>
 
+            {
+              menu_entries.map(entry => {
+                return(
+                  <MenuItem 
+                    id={entry.id}
+                    title={entry.title}
+                    content={entry.content}
+                    items={entry.items}
+                  />
+                );
+              })
+            }
           </div>
         </div>
       </div>

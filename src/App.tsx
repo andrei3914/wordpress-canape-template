@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer'
 import { Link } from 'react-router-dom';
 
 function App() {
+  const [showSlide, setShowSlide] = useState(1);
+  const [button1Color, setButton1Color] = useState('#c39738');
+  const [button2Color, setButton2Color] = useState('#c39738');
+
   return (
     <div>
       <Navigation />
@@ -57,29 +61,47 @@ function App() {
         </div> 
 
         {/* THANK YOU section */}
-        <div className="thankYou">
-          <h2>Thank you's</h2>
-          <ul>
-    
-            <li id='post-1'>
-              <div className="entry-content">
-                <p>My business and Canapé are like salt and pepper, peanut butter and jelly, Batman and Robin, The Fonz and cool, rainbows and pots of gold, Santa and cookies, Pete and Pete – they’re just perfect together.</p>
-              </div>
-              <header className="entry-author">
-                <p><em>- Takashi</em></p>
-              </header>
-            </li>
+        <div className="thankYou-container">
+          <div className="thankYou">
           
-            <li id='post-2'>
-              <div className="entry-content">
-                <p>Canapé made my business what it is today — outstanding, wildly successful, ahead of its time. My products are flying off the shelves, and I truly believe I have Canapé to thank for that.</p>
-              </div>
-              <header className="entry-author">
-                <p><em>- Caroline</em></p>
-              </header>
-            </li>
-              
-          </ul>
+              <h2>Thank you's</h2>
+              <ul className='slides'>
+                {showSlide === 1 ?
+                <li id='post-1'>
+                  <div className="entry-content">
+                    <p>My business and Canapé are like salt and pepper, peanut butter and jelly, Batman and Robin, The Fonz and cool, rainbows and pots of gold, Santa and cookies, Pete and Pete – they’re just perfect together.</p>
+                  </div>
+                  <header className="entry-author">
+                    <p><em>- Takashi</em></p>
+                  </header>
+                </li>
+                :
+                <li id='post-2'>
+                  <div className="entry-content">
+                    <p>Canapé made my business what it is today — outstanding, wildly successful, ahead of its time. My products are flying off the shelves, and I truly believe I have Canapé to thank for that.</p>
+                  </div>
+                  <header className="entry-author">
+                    <p><em>- Caroline</em></p>
+                  </header>
+                </li>
+                }
+              </ul>
+              <ul className='slider-nav flex'>
+                <li><button id='slider-btn-1' onClick={() => {
+                        setShowSlide(1);
+                        setButton1Color('#c39738');
+                        setButton2Color('#b4966b');
+                        }}
+                        style={{'backgroundColor': button1Color}}></button></li>
+                <li><button style={{'backgroundColor': button2Color}} 
+                      onClick={() => {
+                        setShowSlide(2);
+                        setButton1Color('#b4966b');
+                        setButton2Color('#c39738');}}
+                      id='slider-btn-2'></button></li>
+              </ul>
+          
+          </div>
         </div>
 
         {/* CONTACT, SERVICES AND FOLLOW US SECTION*/}
