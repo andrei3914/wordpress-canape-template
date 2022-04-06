@@ -1,0 +1,34 @@
+.menu-container {
+    padding-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .hero {
+        background-image: url('https://canapedemo.files.wordpress.com/2015/11/meal-918639_1920.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        position: relative;
+    }
+
+    .menu-content {
+        border: 2px solid #ece8e0;
+        padding: 1rem;
+        color: #404040;
+
+        .menu-content-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            border-bottom: 1px solid #ece8e0;
+
+            .entry-title {
+                font-family: 'Playfair Display', sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
+}

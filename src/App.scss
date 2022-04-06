@@ -194,6 +194,12 @@ html, body {
     }  
 }
 
+.the-container {
+  padding: 20px;
+  background-color: white;
+  z-index: 1000;
+}
+
 /* MOBILE */
 @media (min-width: 250px) and (max-width: 480px) {
   .home-welcome-div {
@@ -230,6 +236,10 @@ html, body {
       width: 70vw;
       padding: 2em;
     }
+  }
+
+  .the-container {
+    margin-top: 20px;
   }
 }
 
@@ -270,10 +280,15 @@ html, body {
       padding: 2em;
     }
   }
+
+  .the-container {
+    margin-top: -100px;
+  }
 }
 
 /* DESKTOP only */
 @media (min-width: 800px) {
+
   .home-welcome-div {
     width: 70%;
     margin-top: -100px;
@@ -306,5 +321,10 @@ html, body {
       margin-right: 2%;
       padding: 2em;
     }
+  }
+
+  .the-container {
+    width: 70%;
+    margin-top: -100px;
   }
 }

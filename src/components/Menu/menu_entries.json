@@ -1,0 +1,76 @@
+[{
+    "id": 1,
+    "title": "Desserts",
+    "content": "A collection of classic French desserts. These will make an elegant, not to mention delicious ending to any meal.",
+    "items" : [
+        {
+        "item_name": "CHOCOLATE MACARONS",
+        "item_description": "A classic French delicacy, filled with rich chocolate ganache.",
+        "item_price": "$7"
+        },
+        {
+            "item_name": "APPLE GALETTE",
+            "item_description": "Delicate apple tart drizzled with caramel sauce and served with whipped cream.",
+            "item_price":"$9"
+        },
+        {
+            "item_name": "CRÊPES SUZETTE",
+            "item_description": "Delicate crêpes in buttery, orange sauce; served flambé.",
+            "item_price": "$9"
+        }
+    ]
+},
+{
+    "id": 2,
+    "title": "Mains",
+    "content": "From light sole meunière to a hearty Bouillabaisse, there is something for everyone. Always made with fresh, local-sourced ingredients.",
+    "items" : [
+        {
+            "item_name": "DUCK À L’ORANGE",
+            "item_description": "Roasted duck breast with crispy skin and velvety citrus sauce.",
+            "item_price": "$16"
+        },
+        {
+            "item_name": "BOUILLABAISSE",
+            "item_description": "Traditional Provençal fish stew, with shrimp, mussels, clams and monkfish.",
+            "item_price": ""
+        },
+        {
+            "item_name": "COQ AU VIN D’ALSACE",
+            "item_description": "chicken cooked in Riesling with onions, mushrooms and herbs.",
+            "item_price": "$16"
+        },
+        {
+            "item_name": "SOLE MEUNIÈRE",
+            "item_description": "Sole, pan fried in butter and served with brown butter sauce, parsley and lemon.",
+            "item_price": "$18"
+        }
+    ]
+},
+{
+    "id": 3,
+    "title": "Hors d'œuvre",
+    "content": "A French phrase meaning out of the work, used to mean food served as an appetizer before a meal.",
+    "items": [
+        {
+            "item_name":"PORK RILLETTES",
+            "item_description":"with quick pickle of dried apricots",
+            "item_price":"$8"
+        },
+        {
+            "item_name":"PROVENÇAL VEGETABLE TART",
+            "item_description":"With seasonal vegetables",
+            "item_price":"$6"
+        },
+        {
+            "item_name":"SALMON CANAPÉS",
+            "item_description":"Smoked Salmon topped with Creme Fraiche, fresh Dill and Capers.",
+            "item_price":"$6"
+        },
+        {
+            "item_name":"MINI TARTES FLAMBÉES",
+            "item_description":"Traditional Alsatian dish made with home-smoked bacon and onions.",
+            "item_price":"$8"
+        }
+    ]
+}]

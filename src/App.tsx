@@ -83,7 +83,7 @@ function App() {
         </div>
 
         {/* CONTACT, SERVICES AND FOLLOW US SECTION*/}
-        <div className="endpage-container">
+        <div className="endpage-container the-container">
           <div className="contact">
             <h3 className='card-title'>CONTACT</h3>
             <div>
