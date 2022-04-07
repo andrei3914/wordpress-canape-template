@@ -108,6 +108,9 @@
 /* MOBILE */
 @media (min-width: 250px) and (max-width: 480px){
     .news-container {
+        img, video {
+            width: 100%;
+        }
 
         padding: 1rem;
         padding-bottom: 17rem;
@@ -145,6 +148,10 @@
     .news-container {
         padding: 1rem;
         padding-bottom: 17rem;
+
+        img, video {
+            width: 100%;
+        }
 
         .info {    
              width: 100%;

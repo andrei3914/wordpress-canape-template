@@ -30,6 +30,7 @@ const NewsItem: React.FC<Props> = ({ id, title, content, image, image_set, video
             }
                 <p className='item-content'>{content}</p>
             </div>
+            { video && (<video src={video} controls></video>)}
         </div>
     </article>
   )

@@ -315,6 +315,9 @@ img {
 
 /* DESKTOP only */
 @media (min-width: 800px) {
+  .thankYou-container {
+    width: 100%;
+  }
 
   .home-welcome-div {
     width: 70%;
