@@ -8,6 +8,8 @@ import App from './App';
 import Catering from './components/Services/Catering'
 import MenuDev from './components/Services/MenuDev'
 import PrivateChef from './components/Services/PrivateChef'
+import ImageAlignment from './components/Readability/ImageAlignment'
+import HtmlElements from './components/Readability/HtmlElements'
 
 const RouteSwitch = () => {
   return (
@@ -16,11 +18,14 @@ const RouteSwitch = () => {
           <Route path='/' element={<App />}/>
           <Route path='/menu' element={<Menu />}/>
           <Route path='/news' element={<News />}/>
-          <Route path='/readability' element={<Readability />}/>
+          <Route path='/readability' element={<Readability />} />
+          <Route path='/image-alignment' element={<ImageAlignment />} />
+          <Route path='/html-elements' element={<HtmlElements />} />
           <Route path='/reservations' element={<Reservations />}/>
           <Route path='/catering' element={<Catering />}/>
           <Route path='/menu-development' element={<MenuDev />}/>
           <Route path='/private-chef-services' element={<PrivateChef />}/>
+          
         </Routes>
       </HashRouter>
   )

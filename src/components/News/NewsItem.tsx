@@ -17,7 +17,7 @@ const NewsItem: React.FC<Props> = ({ id, title, content, image, image_set, video
         <img src={image} srcSet={image_set} alt="" />
         <div className="news-item-content flex">
             <header>
-                <h1>{title}</h1>
+                <h1 className='item-title'>{title}</h1>
             </header>
             <div className='news-item-body flex'>
             { comments ? 
@@ -26,7 +26,7 @@ const NewsItem: React.FC<Props> = ({ id, title, content, image, image_set, video
                     <span className='comments'>{comments} Comment</span>
                 </div> 
                 :
-                <span className='left-content'>{written}</span>
+                <span className='left-content item-date'>{written}</span>
             }
                 <p className='item-content'>{content}</p>
             </div>

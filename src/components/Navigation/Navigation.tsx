@@ -56,8 +56,16 @@ const Navigation = () => {
                   Readability<span className='dropDownSpan'><RiArrowDropDownLine className='dropDownIcon'/></span>
                 </NavLink>
                 <ul className='hover-navigation'>
-                  <li>Image Alignment</li>
-                  <li>HTML Elements</li>
+                  <li>
+                    <NavLink to='/image-alignment' className={
+                        ({ isActive }) => 
+                        'link dropDownLink' + (isActive ? " selected" : "")}>Image Alignment</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to='/html-elements' className={
+                        ({ isActive }) => 
+                        'link dropDownLink' + (isActive ? " selected" : "")}>HTML Elements</NavLink>
+                  </li>
                 </ul>
             </li>
             <li>

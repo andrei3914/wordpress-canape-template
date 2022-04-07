@@ -37,7 +37,7 @@ const News = () => {
               <div className="google-map">
                 <p>map placeholder</p>
               </div>
-              <a href="/"><p>3999 Mission Boulevard,</p>
+              <a href='/news'><p>3999 Mission Boulevard,</p>
               <p>San Diego CA 92109</p></a>
               <p>1-202-555-1212</p>
               <p>Lunch: 11am - 2pm</p>

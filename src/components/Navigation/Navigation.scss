@@ -47,6 +47,10 @@
             }
     }
 
+    .hover-navigation {
+        opacity: 0;
+    }
+
     .link:hover {
         color: #c39738;
     }
@@ -119,6 +123,7 @@
 
             .hover-navigation {
                 display: block;
+                opacity: 1;
                 margin-top: 10px;
                 margin-bottom: -10px;
 
@@ -140,7 +145,7 @@
 
 
         .primary-navigation {
-            gap: 1rem;
+            gap: 0.5rem;
         }
 
         .navigationLeft {
@@ -152,11 +157,16 @@
         }
         
         .hover-navigation {
+            
             position: absolute;
             z-index: -1000;
             transform: translateY(70%);
 
             transition: transform 500ms ease-out;
+
+            a.link.dropDownLink::before {
+                display: none;
+            }
 
             li::before {
                 content: none;
@@ -166,6 +176,7 @@
 
         .hoverLi:hover, .hover-navigation:hover {
             .hover-navigation {
+                opacity: 1;
                 display: block;
                 z-index: 1000;
 
