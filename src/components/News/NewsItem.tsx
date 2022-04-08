@@ -14,7 +14,7 @@ interface Props {
 const NewsItem: React.FC<Props> = ({ id, title, content, image, image_set, video, comments, written}) => {
   return (
     <article className='news-item-container'>
-        <img src={image} srcSet={image_set} alt="" />
+        {image && <img src={image} srcSet={image_set} alt="" />}
         <div className="news-item-content flex">
             <header>
                 <h1 className='item-title'>{title}</h1>
@@ -26,11 +26,12 @@ const NewsItem: React.FC<Props> = ({ id, title, content, image, image_set, video
                     <span className='comments'>{comments} Comment</span>
                 </div> 
                 :
-                <span className='left-content item-date'>{written}</span>
+                (written && <span className='left-content item-date'>{written}</span>)
             }
-                <p className='item-content'>{content}</p>
+                {content && <p className='item-content'>{content}</p>}
+                { video && (<video src={video} controls></video>)}
             </div>
-            { video && (<video src={video} controls></video>)}
+            
         </div>
     </article>
   )

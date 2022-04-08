@@ -9,6 +9,8 @@
 
     .navigation-title {
         font-size: 2rem;
+
+        font-family: 'Montserrat', Arial, sans-serif;
     }
 
     .primary-navigation {
@@ -31,10 +33,9 @@
 
         li::before, .dropDownLink::before {
             content: "\2022";
-            display: inline-block;
-            width: 1em;
-            margin-left: 0;
             color: #404040;
+
+            margin-right: 1rem;
         }
     }
 
@@ -45,15 +46,16 @@
             .dropDownSpan {
                 line-height: 12px;
             }
+
+            &:hover {
+                color: #c39738;
+            }
     }
 
     .hover-navigation {
         opacity: 0;
     }
-
-    .link:hover {
-        color: #c39738;
-    }
+    
     .selected {
         color: #c39738;
     }

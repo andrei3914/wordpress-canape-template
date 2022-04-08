@@ -8,10 +8,13 @@
 
     .news {
         max-width: 765px;
-
+        
         img {
             width: 100%;
-            box-sizing: border-box;
+        }
+
+        video {
+            margin-top: 1rem;
         }
 
         .news-item-content {
@@ -75,9 +78,9 @@
             justify-content: center;
             align-items: center;
 
-            padding: 10px;
+            padding: 1.5rem;
             border: 2px solid #ece8e0;
-        
+            
             color: #404040;
 
             a {
@@ -120,9 +123,9 @@
              width: 100%;
 
             .hours, .reservations, .about {
-                width: 80vw;
+                width: 80%;
                 margin: 0 auto;
-                padding: 0;
+                padding: 1.5rem;
             }
         }
         
@@ -157,9 +160,9 @@
              width: 100%;
 
             .hours, .reservations, .about {
-                width: 80vw;
+                width: 20rem;
                 margin: 0 auto;
-                padding: 0;
+                padding: 1.5rem;
             }
         }
         
@@ -186,6 +189,10 @@
        .hours, .reservations, .about {
            width: 40rem;
        }
+    }
+
+    video {
+        width: calc(100% - 5.5rem);
     }
 
     .item-title {

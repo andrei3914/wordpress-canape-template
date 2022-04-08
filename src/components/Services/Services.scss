@@ -1,16 +1,8 @@
 .catering-container, .privateChef-container, .menuDev-container {
     padding-bottom: 24rem;
 
-    display: flex;
     flex-direction: column;
     align-items: center;
-
-    .hero-catering {
-        background-image: url('https://canapedemo.files.wordpress.com/2015/12/eating-601578_1920.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
 
     .catering-content, .private-content, .menuDev-content {
         position: relative;
@@ -25,22 +17,9 @@
     }
 
     /* private chef section */
-    .hero-private, .hero-menuDev {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .hero-private {
-        background-image: url('https://canapedemo.files.wordpress.com/2015/12/cutlery-865096_1280.jpg');
-    }
 
     .private-content, .menuDev-content {
         padding-bottom: 50px;
-    }
-
-    .hero-menuDev {
-        background-image: url('https://canapedemo.files.wordpress.com/2015/12/kitchen-731351_1920.jpg');
     }
 
 }
