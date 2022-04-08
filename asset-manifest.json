@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/wordpress-canape-template/static/css/main.ada0a3dd.css",
-    "main.js": "/wordpress-canape-template/static/js/main.101d8e1d.js",
+    "main.css": "/wordpress-canape-template/static/css/main.d08a282f.css",
+    "main.js": "/wordpress-canape-template/static/js/main.28950ed3.js",
     "static/js/787.7daf11c9.chunk.js": "/wordpress-canape-template/static/js/787.7daf11c9.chunk.js",
     "static/media/DroidSerif-Regular.ttf": "/wordpress-canape-template/static/media/DroidSerif-Regular.676e8361ba2314e5d3b4.ttf",
     "static/media/courier-10-pitch.otf": "/wordpress-canape-template/static/media/courier-10-pitch.7aa928b872f7664c447b.otf",
     "index.html": "/wordpress-canape-template/index.html",
     "static/media/icon-hamburger.svg": "/wordpress-canape-template/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.ada0a3dd.css.map": "/wordpress-canape-template/static/css/main.ada0a3dd.css.map",
-    "main.101d8e1d.js.map": "/wordpress-canape-template/static/js/main.101d8e1d.js.map",
+    "main.d08a282f.css.map": "/wordpress-canape-template/static/css/main.d08a282f.css.map",
+    "main.28950ed3.js.map": "/wordpress-canape-template/static/js/main.28950ed3.js.map",
     "787.7daf11c9.chunk.js.map": "/wordpress-canape-template/static/js/787.7daf11c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ada0a3dd.css",
-    "static/js/main.101d8e1d.js"
+    "static/css/main.d08a282f.css",
+    "static/js/main.28950ed3.js"
   ]
 }
